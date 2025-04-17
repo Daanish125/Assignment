@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="WCB_of_Manitoba_logo.svg.png" alt="Logo">
+        </div>
+        <div class="contact-info">
+            333 Broadway <br>
+            Winnipeg, MB R3C 4W3 <br>
+            Phone: (204) 954-4321 <br>
+            Toll Free: 1-855-954-4321 <br>
+            <a href="https://wcb.mb.ca" target="_blank">wcb.mb.ca</a>
+        </div>
+        <div class="right-section">
+            Medical & Travel Expense
+            <p style="text-align:center;">Request</p> 
+        </div>
+    </header>
+    <form> 
+        <p style="margin-left: 20px;"><span style="color:blue"> Madeleine Willson</span> requested reimbursement for the following medical and/or travel expenses:</p>
+        <p style="margin-left: 20px;font-weight: bold;">Prescription Drugs </p>
+        <table style="margin-left: 20px; border-color: black; width: auto;border:2px solid black;">
+            <thead>
+            <tr>
+                <th style="width: auto;border:2px;">Drug Name</th>
+                <th style="width: auto;">Prescription Date</th>
+                <th style="width: auto;">Date Purchased</th>
+                <th style="width: auto;">Healthcare Provider Name</th>
+                <th style="width: auto;">Paid Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="text" name="drug_name" placeholder="Enter Drug Name" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color:rgb(28, 54, 127)"></td>
+                <td><input type="date" name="prescription_date" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                <td><input type="date" name="date_purchased" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                <td><input type="text" name="healthcare_provider" placeholder="Enter Provider Name" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                <td><input type="number" name="paid_amount" placeholder="Enter Amount" step="0.01" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+            </tr>
+            
+            </tbody>
+        </table>
+        <p style="margin-left: 20px;font-weight: bold;">Over-the-Counter Drugs </p>
+        <table style="margin-left: 20px; border-color: black; width: auto; border: 2px solid black;">
+            <thead>
+                <tr>
+                    <th style="width: auto;">Drug Name</th>
+                    <th style="width: auto;">Date Purchased</th>
+                    <th style="width: auto;">Paid Amount</th>
+                    <th style="width: auto;">Seller's Name</th>
+                    <th style="width: auto;">Reason for Purchasing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="otc_drug_name" placeholder="Enter Drug Name" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                    <td><input type="date" name="otc_date_purchased" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                    <td><input type="number" name="otc_paid_amount" placeholder="Enter Amount" step="0.01" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                    <td><input type="text" name="otc_seller_name" placeholder="Enter Seller's Name" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                    <td><input type="text" name="otc_reason" placeholder="Enter Reason" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-left: 20px;font-weight: bold;">Bandages, Braces or Other Medical Supplies </p>
+        <table style="margin-left: 20px; border-color: black; width: auto; border: 2px solid black; font-weight: normal;">
+            <thead>
+                <tr>
+                    <th style="width: auto;">Item Purchased</th>
+                    <th style="width: auto;">Date Purchased</th>
+                    <th style="width: auto;">Was This Prescribed?</th>
+                    <th style="width: auto;">Healthcare Provider Name</th>
+                    <th style="width: auto;">Paid Amount</th>
+                    <th style="width: auto;">Seller's Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="item_purchased" placeholder="Enter Item Name" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                    <td><input type="date" name="date_purchased" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color:rgb(28, 54, 127);"></td>
+                    <td>
+                        <select name="was_prescribed" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="healthcare_provider_name" placeholder="Enter Provider Name" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                    <td><input type="number" name="paid_amount" placeholder="Enter Amount" step="0.01" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                    <td><input type="text" name="sellers_name" placeholder="Enter Seller's Name" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box;color: rgb(28, 54, 127);"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-left: 20px;font-weight: bold;">Parking for Medical Appointments</p>
+        <table style="margin-left: 20px; border-color: black; width: auto; border: 2px solid black;">
+            <thead>
+                <tr>
+                    <th style="width: auto;">Address of Healthcare Provider/Medical Facility</th>
+                    <th style="width: auto;">Date</th>
+                    <th style="width: auto;">Paid Amount</th>
+                    <th style="width: auto;">Meter Used?</th>
+                    <th style="width: auto;">Meter Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="provider_address" placeholder="Enter Address" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);"></td>
+                    <td><input type="date" name="date" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);"></td>
+                    <td><input type="number" name="paid_amount" placeholder="Enter Amount" step="0.01" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);"></td>
+                    <td>
+                        <select name="meter_used" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="meter_number" placeholder="Enter Meter Number" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color:rgb(28, 54, 127);"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-left: 20px;font-weight: bold;">Mileage to Medical Appointments</p>
+        <p style="margin-left: 20px;">The WCB will generally reimburse only those transportation costs which are in excess of costs that would be incurred by the worker while travelling to and from work.</p>
+        <table style="margin-left: 20px; border-color: black; width: auto; border: 2px solid black;">
+            <thead>
+                <tr>
+                    <th style="width: auto;">Appointment Date</th>
+                    <th style="width: auto;">Address of Healthcare Provider/Medical Facility</th>
+                    <th style="width: auto;">Address of Workplace</th>
+                    <th style="width: auto;">Number of KM (Round Trip)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="date" name="appointment_date" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color:rgb(28, 54, 127);"></td>
+                    <td><input type="text" name="provider_address" placeholder="Enter Address" rows="3" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);"></td>
+                    <td><input type="text" name="workplace_address" placeholder="Enter Address" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);"></td>
+                    <td><input type="number" name="round_trip_km" placeholder="Enter KM" step="0.01" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color:rgb(28, 54, 127);"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+    <footer style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: white; border-top: 1px solid white; font-size: 12px; margin-top: 100px;">
+        <div style="margin-bottom: 20px;">Worker App ID: 712041</div>
+        <div style="text-align: right;line-height: 3px;">Submitted: March 28, 2024 20:43
+            <p>page 2 of 2</p>
+        </div>
+        
+    </footer>
+    <div style="background-color: black; height: 20px; margin-top: 10px;"></div>
+    <div style="height: 40px;"></div>
+    <p style="margin-left: 20px; font-weight: bold;">Bus or Taxi Fare for Medical Appointments*</p>
+    <p style="margin-left: 20px;">*Note: Pre-approval is required from your WCB representative to claim taxi fare(s). </p>
+    <p style="margin-left: 20px; font-weight: bold;">Bus or Taxi Fare for Medical Appointments</p>
+    <table style="margin-left: 20px; border-color: black; width: auto; border: 2px solid black;">
+        <thead>
+            <tr>
+                <th style="width: auto;">Appointment Date</th>
+                <th style="width: auto;">Address of Starting Point</th>
+                <th style="width: auto;">Address of Healthcare Provider/Medical Facility</th>
+                <th style="width: auto;">Bus or Taxi (Indicate One)</th>
+                <th style="width: auto;">Total Fare Paid</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="date" name="appointment_date" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);"></td>
+                <td><textarea name="starting_point_address" placeholder="Enter Address" rows="3" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);"></textarea></td>
+                <td><textarea name="provider_address" placeholder="Enter Address" rows="3" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);"></textarea></td>
+                <td>
+                    <select name="bus_or_taxi" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);">
+                        <option value="bus">Bus</option>
+                        <option value="taxi">Taxi</option>
+                    </select>
+                </td>
+                <td><input type="number" name="total_fare_paid" placeholder="Enter Fare" step="0.01" style="border: none; width: 100%; font-size: 12px; box-sizing: border-box; color: rgb(28, 54, 127);"></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr style="border: 1px solid grey; margin-left: 20px;margin-right: 20px;margin-top:10px;">
+    <div style="margin-left: 20px; margin-top: 20px;">
+        <div style="display: flex; align-items: center;"></div>
+            <input type="checkbox" id="privacy_notice" name="privacy_notice" required style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); width: 20px; height: 20px; cursor: pointer;">
+            <label for="privacy_notice" style="margin-left:5px;margin-top:5px; font-size: 14px;">I understand that the <u><span style="color:blue">Privacy Notice</span></u> applies to the personal information collected in this document.</label>
+        </div>
+    </div>
+    <footer style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: white; border-top: 1px solid white; font-size: 12px; margin-top: 500px;">
+        <div style="margin-bottom: 20px;">Worker App ID: 712041</div>
+        <div style="text-align: right;line-height: 3px;">Submitted: March 28, 2024 20:43
+            <p>page 2 of 2</p>
+        </div>
+        
+    </footer>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
